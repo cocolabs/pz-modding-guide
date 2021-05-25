@@ -161,7 +161,7 @@ In addition to this, if the mod project contains code, the code itself should be
 
 Larger projects are encouraged to open and maintain a wiki where they can document different project aspects in detail. For example; a mod that expands foraging should have a wiki page that lists all the different plants that can be foraged, a mod that adds more cooking recipe should list those recipes along with recipe schematics that inform the players how to use them, a mod that overhauls zombie behavior should split each behavior category in different pages and provide a detailed explanation of how exactly different aspects of behavior differ from vanilla behavior.
 
-The recommended way of creating and hosting wikis is with [Github wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis). It allows you to write pages in Markdown and HTLM format. It also allows others to contribute either directly or via pull requests, since each wiki is a Git repository with it's own detailed history of changes.
+The recommended way of creating and hosting wikis is with [Github wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis). It allows you to write pages in Markdown and HTML format. It also allows others to contribute either directly or via pull requests, since each wiki is a Git repository with it's own detailed history of changes.
 
 ### Licensing
 
