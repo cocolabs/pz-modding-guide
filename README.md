@@ -6,6 +6,39 @@ This document will focus on explaining the methodology used to create, publish a
 
 This document is intended to be a complete guide that guides you through the process of modding various game aspects, providing detailed examples and explaining the reasoning behind the methodology used. If you are just looking for references, tutorials, code examples or a quick guide to creating simple modifications you should read [Project Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide) instead which serves more as an unofficial Project Zomboid wiki.
 
+## Contents
+
+- [Disclaimer](#disclaimer)
+- [Motivation](#motivation)
+- [Requirements](#requirements)
+- [Methodology](#methodology)
+  - [Reasoning](#reasoning)
+  - [Design](#design)
+  - [Version control](#version-control)
+    - [What is VCS?](#what-is-vcs)
+    - [Why use VCS?](#why-use-vcs)
+    - [How to use VCS?](#how-to-use-vcs)
+  - [Documentation](#documentation)
+    - [Project wiki](#project-wiki)
+  - [Licensing](#licensing)
+    - [Freedom](#freedom)
+    - [Which license?](#which-license)
+    - [Steam Workshop](#steam-workshop)
+- [Tools](#tools)
+- [Environment](#environment)
+- [Writing code](#writing-code)
+  - [Lua modding](#lua-modding)
+    - [Advantages](#advantages)
+    - [Disadvantages](#disadvantages)
+    - [Limitations](#limitations)
+  - [Java modding](#java-modding)
+    - [Advantages](#advantages-1)
+    - [Disadvantages](#disadvantages-1)
+    - [Recompiling](#recompiling)
+    - [The Storm Project](#the-storm-project)
+- [Community](#community)
+- [Credits](#credits)
+- [License](#license)
 ## Disclaimer
 
 Readers are encouraged to remember that all information in this guide is presented as *opinion* as opposed to *fact*. Any information directing readers to do one thing instead of another is intended to be taken as *advice* as opposed to an *order*. Statement criticizing any aspect of methodology should not be taken as a *critique* of personal nature. The author of this document does not assume **responsibility** or give **warranties** of any kind. This includes responsibility for offended sensibilities, mood swings, sleepless nights or damage to your software or hardware. The author of this document also make **no guarantee** that any and all information in this guide is accurate at any time beyond the point at which it was written.
