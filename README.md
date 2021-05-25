@@ -9,6 +9,7 @@ This document is intended to be a complete guide that guides you through the pro
 ## Contents
 
 - [How to read this guide](#how-to-read-this-guide)
+- [Glossary](#glossary)
 - [Disclaimer](#disclaimer)
 - [Motivation](#motivation)
 - [Requirements](#requirements)
@@ -46,6 +47,26 @@ This document is intended to be a complete guide that guides you through the pro
 Due to the large size of this guide it is **not recommended** to read it using your web browser.
 
 Instead you should use [Typora](https://typora.io/), a free and open source markdown editor. It is beautiful, lightweight and perfect for reading and writing markdown files. It features an outline panel which allows you to see the outline structure of this document allowing you to quickly go through the document and jump to any section with one click. It also has different themes to choose from, allowing you to customize your reading experience.
+
+## Glossary
+
+- **Mod** - One or more files that modify the game either directly or through third party applications.
+- **Modding** - The process of modifying Project Zomboid or video game files in general.
+- **Mod development** - The process of creating and publishing game modifications.
+- **Workflow** - The set of relationships between project activities, from start to finish.
+- **Methodology** - An organized and documented set of procedures and guidelines.
+- **License** - Refers to a software license which is a legal instrument governing the use or redistribution of software.
+- **Java** - High level, class based, object-oriented programming language developed by Oracle.
+- **Lua** - Lightweight, high-level programming language primarily used to provide application scripting support.
+- **IDE** - Refers to *Integrated development environment* which is an application that provides tools for software development.
+- **Open source** - The quality of having publicly accessible design (mostly referring to software).
+- **Decompile** - The process of creating a source file from a compiled class file.
+- **API** - Refers to *Application Programing Interface* which is an interface that defines interactions between multiple software applications.
+- **Bug** - An error in software that causes it to produce an incorrect or unexpected result.
+- **Debug** - The process of finding and resolving bugs within software.
+- **Changelog** - Log or record of all notable changes made to a project.
+- **JVM** - Refers to *Java Virtual Machine* which is a virtual machine that enables a computer to run Java programs.
+- **Bytecode** - Code compiled to run on a Java Virtual Machine. It is usually stored in `.class` files.
 
 ## Disclaimer
 
