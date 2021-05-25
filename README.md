@@ -43,7 +43,7 @@ This document is intended to be a complete guide that guides you through the pro
 
 ## How to read this guide
 
-Due to the large size of this guide it is **not recommended** to read it using your web browser. 
+Due to the large size of this guide it is **not recommended** to read it using your web browser.
 
 Instead you should use [Typora](https://typora.io/), a free and open source markdown editor. It is beautiful, lightweight and perfect for reading and writing markdown files. It features an outline panel which allows you to see the outline structure of this document allowing you to quickly go through the document and jump to any section with one click. It also has different themes to choose from, allowing you to customize your reading experience.
 
@@ -201,13 +201,13 @@ Since the development environment includes many interconnecting systems which ne
 
 ## Writing code
 
-Project Zomboid's codebase is divided into two main components; the *frontend* and *backend*. The frontend is written in Lua and is mainly focused on defining the user interface. The backed is written in Java and handles most of game logic, rendering objects, registering user input and much more. 
+Project Zomboid's codebase is divided into two main components; the *frontend* and *backend*. The frontend is written in Lua and is mainly focused on defining the user interface. The backed is written in Java and handles most of game logic, rendering objects, registering user input and much more.
 
 Since the early days of Project Zomboid there was only ever two ways of modding the game; with Lua using the official API or with Java by modifying and recompiling game classes. The following sections list the advantages and disadvantages of both approaches.
 
 ### Lua modding
 
-Official modding support is implemented with modified [Kahlua](https://code.google.com/archive/p/kahlua/), which is a Lua interpreter written in Java. It reads instructions written in Lua and executes them in the Java Virtual Machine. Lua interacts with Java using an [API](https://projectzomboid.com/modding/) defined in [`LuaManager`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.html). Methods defined in [`LuaManager.GlobalObject`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.GlobalObject.html) are exported as global Lua functions and classes exported by `LuaManager.Exposer` are available as global Lua tables. 
+Official modding support is implemented with modified [Kahlua](https://code.google.com/archive/p/kahlua/), which is a Lua interpreter written in Java. It reads instructions written in Lua and executes them in the Java Virtual Machine. Lua interacts with Java using an [API](https://projectzomboid.com/modding/) defined in [`LuaManager`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.html). Methods defined in [`LuaManager.GlobalObject`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.GlobalObject.html) are exported as global Lua functions and classes exported by `LuaManager.Exposer` are available as global Lua tables.
 
 #### Advantages
 
@@ -251,7 +251,7 @@ Still, there are many examples where it makes more sense to use Lua over Java, s
 
 #### Recompiling
 
-The old way of modding with Java is by modifying and recompiling game Java classes. 
+The old way of modding with Java is by modifying and recompiling game Java classes.
 
 Here are the steps that need to be repeated for each Java class:
 
@@ -269,7 +269,7 @@ This method of modding is **not recommended** since it is tedious and not useful
 
 [Zomboid Storm](https://github.com/pzstorm/storm) is the new and *sexy* way of modding Project Zomboid.
 
-It is a fully integrated Java **modding toolchain** that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encouraged to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md). 
+It is a fully integrated Java **modding toolchain** that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encouraged to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md).
 
 ## Community
 
