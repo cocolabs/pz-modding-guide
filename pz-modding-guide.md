@@ -218,3 +218,9 @@ This method of modding is **not recommended** since it is tedious and not useful
 
 It is a fully integrated Java modding toolchain that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encourage to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md). 
 
+## Community
+
+- Visit the [PZ Modding](https://theindiestone.com/forums/index.php?/forum/45-pz-modding/) section of the Project Zomboid forum to discuss and learn about modding.
+- Join the official Project Zomboid [Discord server](https://discord.gg/EjSqDd9x) and visit the `#modding` channel to discuss modding.
+- Join the unofficial Project Zomboid [Discord server](https://discord.gg/vCeydWCbd9) to meet the author of this guide and discuss and learn about modding.
+
