@@ -12,7 +12,9 @@ Readers should note that the methodology proposed in this guide is not presented
 
 ## Motivation
 
-The process of game modding is a fun and rewarding activity where players get to modify the game to create interesting and engaging content for themselves and others to enjoy. It can also be exhausting, time consuming and mind numbing experience with most time being spent on preforming tedious tasks, searching for documentation and solving unexpected problems. Not using the right tools, looking at the right places, or learning the right things all lead to frustration and an eventual burnout. The primary purpose of this guide is to make your modding experience more fun and less tedious.
+The process of game modding is a fun and rewarding activity where players get to modify the game to create interesting and engaging content for themselves and others to enjoy. It can also be exhausting, time consuming and mind numbing experience with most time being spent on preforming tedious tasks, searching for documentation and solving unexpected problems. Not using the right tools or looking at the right places all lead to frustration and an eventual burnout. 
+
+The primary purpose of this guide is to present an alternative way of modding that benefits both mod developers and the modding community as a whole. A way of modding that allows us to create a more sustainable culture of preserving and sharing knowledge. Nobody benefits when mod developers experience regular burnouts or when they develop mods behind closed doors and use copyright licenses to prevent others from copying their work. The culture will not change just because this guide was written, but it will hopefully inspire some to embrace a more community oriented approach to developing mods.
 
 ## Requirements
 
