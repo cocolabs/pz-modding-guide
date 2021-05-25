@@ -145,3 +145,10 @@ Developers that write code will benefit from following features in their IDE:
 - Code navigation helps quickly find what we are looking for saving us time and energy.
 
 Since the development environment includes many interconnecting systems which need to be configured in the right order, it is difficult to setup manually. This is why [The Storm Project](https://github.com/pzstorm/) has created [Capsid](https://github.com/pzstorm/capsid). It is a [Gradle](https://gradle.org/) plugin that enables powerful IDE features and improves your modding workflow. It helps automate the  process of setting up, assembling and deploying your project. Read the project [`README`](https://github.com/pzstorm/capsid/blob/master/README.md) for information on how to install, configure and use Capsid.
+
+## Writing code
+
+Project Zomboid's codebase is divided into two main components; the *frontend* and *backend*. The frontend is written in Lua and is mainly focused on defining the user interface. The backed is written in Java and handles most of game logic, rendering objects, registering user input and much more. 
+
+Since the early days of Project Zomboid there was only ever two ways of modding the game; with Lua using the official API or with Java by modifying and recompiling game Java classes. The following sections list the advantages and disadvantages of both approaches.
+
