@@ -8,6 +8,7 @@ This document is intended to be a complete guide that guides you through the pro
 
 ## Contents
 
+- [How to read this guide](#how-to-read-this-guide)
 - [Disclaimer](#disclaimer)
 - [Motivation](#motivation)
 - [Requirements](#requirements)
@@ -39,6 +40,13 @@ This document is intended to be a complete guide that guides you through the pro
 - [Community](#community)
 - [Credits](#credits)
 - [License](#license)
+
+## How to read this guide
+
+Due to the large size of this guide it is **not recommended** to read it using your web browser. 
+
+Instead you should use [Typora](https://typora.io/), a free and open source markdown editor. It is beautiful, lightweight and perfect for reading and writing markdown files. It features an outline panel which allows you to see the outline structure of this document allowing you to quickly go through the document and jump to any section with one click. It also has different themes to choose from, allowing you to customize your reading experience.
+
 ## Disclaimer
 
 Readers are encouraged to remember that all information in this guide is presented as *opinion* as opposed to *fact*. Any information directing readers to do one thing instead of another is intended to be taken as *advice* as opposed to an *order*. Statement criticizing any aspect of methodology should not be taken as a *critique* of personal nature. The author of this document does not assume **responsibility** or give **warranties** of any kind. This includes responsibility for offended sensibilities, mood swings, sleepless nights or damage to your software or hardware. The author of this document also make **no guarantee** that any and all information in this guide is accurate at any time beyond the point at which it was written.
