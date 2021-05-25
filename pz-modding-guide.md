@@ -135,7 +135,7 @@ The excerpt above was taken from the [Steam Subscriber Agreement](https://store.
 Here is a list of essential tools that every mod developer should use:
 
 - [Notepad++](https://notepad-plus-plus.org/) - Free source code editor and Notepad replacement written in C++. It should be preferred over programs like [Atom](https://atom.io/) and [Sublime Text](https://www.sublimetext.com/) due to it's efficiency and simplicity. It is a very **portable** and **powerful** tool that allows for advanced text manipulation and formatting. You can use it's expansive search functionality to (recursively) find text occurrences in files across different directories from a single search action. It also support searching, marking and replacing text with regular expression. With that and a lot more advanced features at your disposal Notepad++ is your most efficient tool for searching, editing and formatting text. Note that this only applies to text, when writing code your preferred tool should always be IntelliJ IDEA.
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Integrated development environment written in Java for developing software. It allows you to read, write, decompile and search through game code. It also allows you to efficiently search through game scripts and other text based files with an easy to use user interface that supports search scopes and regular expressions. It is also used to setup your **mod development environment**, which is the primary reason it is recommended as an essential tool for all mod developers. Read more about setting up you development environment in [Environment](#environment) section. In addition to this it is important to note that this is the same program used by **The Indie Stone** developers to write game code.
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Integrated development environment written in Java for developing software. It allows you to read, write, decompile and search through game code. It also allows you to efficiently search through game scripts and other text based files with an easy to use user interface that supports search scopes and regular expressions. It is also used to setup your **mod development environment**, which is the primary reason it is recommended as an essential tool for all mod developers. Read more about setting up you development environment in [Environment](#environment) section. In addition to this it is important to note that this is the same program used by The Indie Stone developers to write game code.
 
 ## Environment
 
@@ -152,7 +152,7 @@ Properly installed mod development environment will allow you to do the followin
 Developers that write code will benefit from following features in their IDE:
 
 - Code analysis helps spot bugs and avoid lengthy debugging sessions.
-- Code navigation helps quickly find what we are looking for saving us time and energy.
+- Code navigation helps quickly track code flow and find methods, fields and classes.
 
 Since the development environment includes many interconnecting systems which need to be configured in the right order, it is difficult to setup manually. This is why [The Storm Project](https://github.com/pzstorm/) has created [Capsid](https://github.com/pzstorm/capsid). It is a [Gradle](https://gradle.org/) plugin that enables powerful IDE features and improves your modding workflow. It helps automate the process of setting up, assembling and deploying your project. Read the project [`README`](https://github.com/pzstorm/capsid/blob/master/README.md) for information on how to install, configure and use Capsid.
 
@@ -160,11 +160,11 @@ Since the development environment includes many interconnecting systems which ne
 
 Project Zomboid's codebase is divided into two main components; the *frontend* and *backend*. The frontend is written in Lua and is mainly focused on defining the user interface. The backed is written in Java and handles most of game logic, rendering objects, registering user input and much more. 
 
-Since the early days of Project Zomboid there was only ever two ways of modding the game; with Lua using the official API or with Java by modifying and recompiling game Java classes. The following sections list the advantages and disadvantages of both approaches.
+Since the early days of Project Zomboid there was only ever two ways of modding the game; with Lua using the official API or with Java by modifying and recompiling game classes. The following sections list the advantages and disadvantages of both approaches.
 
 ### Lua modding
 
-Official modding support is implemented with modified [Kahlua](https://code.google.com/archive/p/kahlua/), a Lua interpreter written in Java. It reads instructions written in Lua and executes them with Java Virtual Machine. Lua interacts with Java using an [API](https://projectzomboid.com/modding/) defined in [LuaManager](https://projectzomboid.com/modding/zombie/Lua/LuaManager.html). Methods defined in [LuaManager.GlobalObject](https://projectzomboid.com/modding/zombie/Lua/LuaManager.GlobalObject.html) are exported as global Lua functions and classes exported by `LuaManager.Exposer` are available as global Lua tables. 
+Official modding support is implemented with modified [Kahlua](https://code.google.com/archive/p/kahlua/), which is a Lua interpreter written in Java. It reads instructions written in Lua and executes them in the Java Virtual Machine. Lua interacts with Java using an [API](https://projectzomboid.com/modding/) defined in [`LuaManager`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.html). Methods defined in [`LuaManager.GlobalObject`](https://projectzomboid.com/modding/zombie/Lua/LuaManager.GlobalObject.html) are exported as global Lua functions and classes exported by `LuaManager.Exposer` are available as global Lua tables. 
 
 #### Advantages
 
@@ -189,9 +189,9 @@ Official modding support is implemented with modified [Kahlua](https://code.goog
 
 ### Java modding
 
-This way of modding is not officially supported and is generally frowned upon by the community. However it offers many advantages over the official way which is why this guide promotes it as the **recommended** way of modding.
+This way of modding is not officially supported and is generally frowned upon by the community. However it offers many advantages over the official way which is why this guide promotes it as the **recommended** way of mod development.
 
-Still there are many examples where it makes more sense to use Lua over Java, such as when modifying user interface elements. Keep in mind that your mod can mix both Lua and Java depending on the need. The golden rule here is that any mod implementation that is either impossible to implement in Lua or can be implemented easily in Java should be written in Java, the rest should be written in Lua.
+Still, there are many examples where it makes more sense to use Lua over Java, such as when creating or modifying user interface elements. Keep in mind that your mod can mix both Lua and Java depending on the need. The golden rule here is that any mod implementation that is either impossible to implement in Lua or can be implemented easier in Java then in Lua should be written in Java. The rest should be written in Lua.
 
 #### Advantages
 
@@ -218,7 +218,7 @@ Here are the steps that need to be repeated for each Java class:
 - If the bytecode does not match, modify the new class to match bytecode.
 - Apply custom modifications to new class and build it.
 
-There are three problems with this approach. The first one being that the process outlined above requires extensive knowledge of bytecode and is quite tedious to repeat for each class. The second problem is that every time we update the game to a new version we have to check if the game classes we are replacing have changed and then either repeat the aforementioned process or replace them with our custom classes. The last and most important problem is that there is no safe to distribute our mods to the community. If we upload the recompiled classes anywhere online we are essentially distributing parts of Project Zomboid which is a proprietary product protected under law. 
+There are three problems with this approach. The first one being that the process outlined above requires extensive knowledge of bytecode and is quite tedious to repeat for each class. The second problem is that every time we update the game to a new version we have to check if the game classes we are replacing have changed and then either repeat the aforementioned process or replace them with our custom classes. The last and most important problem is that there is no safe way to distribute our mods to the community. If we upload the recompiled classes anywhere online we are essentially distributing parts of Project Zomboid which is a proprietary product protected under law. This could easily result in you receiving a visit from judge Spiffo.
 
 This method of modding is **not recommended** since it is tedious and not useful to the community as a whole.
 
@@ -226,7 +226,7 @@ This method of modding is **not recommended** since it is tedious and not useful
 
 [Zomboid Storm](https://github.com/pzstorm/storm) is the new and *sexy* way of modding Project Zomboid.
 
-It is a fully integrated Java modding toolchain that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encourage to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md). 
+It is a fully integrated Java **modding toolchain** that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encouraged to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md). 
 
 ## Community
 
