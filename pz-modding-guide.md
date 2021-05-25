@@ -224,3 +224,9 @@ It is a fully integrated Java modding toolchain that allows mod developers to ea
 - Join the official Project Zomboid [Discord server](https://discord.gg/EjSqDd9x) and visit the `#modding` channel to discuss modding.
 - Join the unofficial Project Zomboid [Discord server](https://discord.gg/vCeydWCbd9) to meet the author of this guide and discuss and learn about modding.
 
+## Credits
+
+- [The Indie Stone](https://projectzomboid.com/blog/about-us/) for creating and continually working on Project Zomboid making it the best zombie survival game.
+- [FWolfe](https://github.com/FWolfe) for writing [Project Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide) and inspiring me to write this guide.
+- Project Zomboid modding community for helping me learn more about the game.
+
