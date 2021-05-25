@@ -230,3 +230,14 @@ It is a fully integrated Java modding toolchain that allows mod developers to ea
 - [FWolfe](https://github.com/FWolfe) for writing [Project Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide) and inspiring me to write this guide.
 - Project Zomboid modding community for helping me learn more about the game.
 
+## License
+
+```
+Copyright (C)  2021  Matthew Cain.
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is included in the section entitled 
+"GNU Free Documentation License".
+```
