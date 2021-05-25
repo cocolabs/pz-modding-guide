@@ -105,6 +105,8 @@ The final and most important aspect of modding methodology is licensing. Develop
 
 As mentioned in the previous section, the main reason why mod developers should learn and practice version control is to help the community. In turn the community helps them. Nobody knows everything and the value of collective knowledge always outweighs that of individual knowledge.
 
+#### Freedom
+
 For this same reason mod developers should keep their mods open source, since version control does not benefit the community if it is kept secret. They should also guarantee users essential freedoms when using their mods. Keeping your project open source means that the source code and asset project files are open for anyone to use, study and modify. This principle allows others to contribute to the development and improvement of mods like a community.
 
 As stated by [GNU](https://www.gnu.org/philosophy/free-sw.html), free and open source software should give users the following essential freedoms:
@@ -116,7 +118,11 @@ As stated by [GNU](https://www.gnu.org/philosophy/free-sw.html), free and open s
 
 Many mod developers are hesitant to make their projects open source as they are afraid that by doing so they are allowing others to steal their work and claim it as their own. This stems from a fundamental misunderstanding of what *free software* is. When declaring your project open source you are not telling the world that you forgo all legal rights and that anyone can do what they want with your work. You are telling the world that they **have the freedom to run, copy, distribute, study, change and improve** your work, nothing more. Most open source licenses protect your work under threat of legal punishment against actions such as someone taking your work and publishing it under their name.
 
+#### Which license?
+
 Before starting a mod project you should think about [choosing an open source license](https://choosealicense.com/) that works best for you. The best choice for small and simple projects is the [MIT License](https://choosealicense.com/licenses/mit/) which lets people do almost anything they want with your project, like making and distributing closed source versions. However, if you are working on a more serious project it is recommended to use the [GNU GPL v3](https://choosealicense.com/licenses/gpl-3.0/) license which also lets people do almost anything they want with your project, *except* distributing closed source versions. Not allowing people to distribute closed source versions helps enforce the principles of free software.
+
+#### Steam Workshop
 
 When uploading your mod to the [Steam Workshop](https://steamcommunity.com/workshop/) you grant Valve the following rights:
 
