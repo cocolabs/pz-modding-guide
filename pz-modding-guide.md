@@ -127,3 +127,21 @@ Here is a list of essential tools that every mod developer should use:
 - [Notepad++](https://notepad-plus-plus.org/) - Free source code editor and Notepad replacement written in C++. It should be preferred over programs like Atom and Sublime due to it's efficiency and simplicity. It is a very **portable** yet **powerful** tool that allows for advanced text manipulation and formatting. You can use it's expansive search functionality to find text occurrences in files across different directories (recursively) from a single search action. It also support searching, marking and replacing text with regular expression. With that and a lot more advanced features at your disposal Notepad++ is your most efficient tool for searching, editing and formatting text. Note that this only applies to text, when writing code your preferred tool should always be IntelliJ IDEA.
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Integrated development environment written in Java for developing software. It allows you to read, write, decompile and search through game code. It also allows you to efficiently search through game scripts and other text based files with an easy to use user interface that supports search scopes and regular expressions. It is also used to setup your **mod development environment**, which is the primary reason it is recommended as an essential tool for all mod developers. Read more about setting up you development environment in [Environment](#environment) section. In addition to this it is important to note that this is the same program used by **The Indie Stone** developers to write game code.
 
+## Environment
+
+Setting up your mod development environment is the first step in creating your first mod.
+
+Properly installed mod development environment will allow you to do the following from the comfort of your IDE:
+
+- Easily setup correct mod structure and assemble mod distribution.
+- Easily decompile and read game code with code navigation support.
+- Write Lua code with an up-to-date API documentation attached to project.
+- Launch and debug Project Zomboid with console logging and use of breakpoints.
+- Fully automate changelog generation and create mod distributions with a click of a button.
+
+Developers that write code will benefit from following features in their IDE:
+
+- Code analysis helps spot bugs and avoid lengthy debugging sessions.
+- Code navigation helps quickly find what we are looking for saving us time and energy.
+
+Since the development environment includes many interconnecting systems which need to be configured in the right order, it is difficult to setup manually. This is why [The Storm Project](https://github.com/pzstorm/) has created [Capsid](https://github.com/pzstorm/capsid). It is a [Gradle](https://gradle.org/) plugin that enables powerful IDE features and improves your modding workflow. It helps automate the  process of setting up, assembling and deploying your project. Read the project [`README`](https://github.com/pzstorm/capsid/blob/master/README.md) for information on how to install, configure and use Capsid.
