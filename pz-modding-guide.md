@@ -152,3 +152,28 @@ Project Zomboid's codebase is divided into two main components; the *frontend* a
 
 Since the early days of Project Zomboid there was only ever two ways of modding the game; with Lua using the official API or with Java by modifying and recompiling game Java classes. The following sections list the advantages and disadvantages of both approaches.
 
+### Lua modding
+
+Official modding support is implemented with modified [Kahlua](https://code.google.com/archive/p/kahlua/), a Lua interpreter written in Java. It reads instructions written in Lua and executes them with Java Virtual Machine. Lua interacts with Java using an [API](https://projectzomboid.com/modding/) defined in [LuaManager](https://projectzomboid.com/modding/zombie/Lua/LuaManager.html). Methods defined in [LuaManager.GlobalObject](https://projectzomboid.com/modding/zombie/Lua/LuaManager.GlobalObject.html) are exported as global Lua functions and classes exported by `LuaManager.Exposer` are available as global Lua tables. 
+
+#### Advantages
+
+- Easy to learn and write mods with.
+- Has officially supported API.
+- Supported by the modding community. 
+
+#### Disadvantages
+
+- Unable to access classes and members that are not directly exposed by API.
+- No type safety or on-the-fly compiler errors makes it more difficult to write code. 
+- More difficult to debug due to lack of proper debugging tools.
+- No control over memory management.
+
+#### Limitations
+
+- Does not implement all standard Lua modules such as `io.*` and `os.*`.
+- Java classes that have not been directly exposed by `LuaManager.Exposed` are not accessible from Lua.
+- Java class fields are not accessible from Lua regardless of whether the owner class is directly exposed or not. 
+- Numbers cannot be stored as any type other then `double` in `KahluaTable` which degrades performance and increases memory use.
+
+
