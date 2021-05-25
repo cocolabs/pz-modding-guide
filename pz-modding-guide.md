@@ -177,3 +177,44 @@ Official modding support is implemented with modified [Kahlua](https://code.goog
 - Numbers cannot be stored as any type other then `double` in `KahluaTable` which degrades performance and increases memory use.
 
 
+### Java modding
+
+This way of modding is not officially supported and is generally frowned upon by the community. However it offers many advantages over the official way which is why this guide promotes it as the **recommended** way of modding.
+
+Still there are many examples where it makes more sense to use Lua over Java, such as when modifying user interface elements. Keep in mind that your mod can mix both Lua and Java depending on the need. The golden rule here is that any mod implementation that is either impossible to implement in Lua or can be implemented easily in Java should be written in Java, the rest should be written in Lua.
+
+#### Advantages
+
+- Nearly unlimited scope of modding.
+- Type safety and access to all IDE features.
+- Easy to inspect and debug your code during runtime. 
+- Complete control over memory management.
+
+#### Disadvantages
+
+- More difficult to learn and use.
+- Does not have officially supported API.
+- Not supported by *most* of the modding community.
+
+#### Recompiling
+
+The old way of modding with Java is by modifying and recompiling game Java classes. 
+
+Here are the steps that need to be repeated for each Java class:
+
+- Decompile the game class.
+- Build the class from decompiled sources.
+- Check if new and old class have matching bytecode.
+- If the bytecode does not match, modify the new class to match bytecode.
+- Apply custom modifications to new class and build it.
+
+There are three problems with this approach. The first one being that the process outlined above requires extensive knowledge of bytecode and is quite tedious to repeat for each class. The second problem is that every time we update the game to a new version we have to check if the game classes we are replacing have changed and then either repeat the aforementioned process or replace them with our custom classes. The last and most important problem is that there is no safe to distribute our mods to the community. If we upload the recompiled classes anywhere online we are essentially distributing parts of Project Zomboid which is a proprietary product protected under law. 
+
+This method of modding is **not recommended** since it is tedious and not useful to the community as a whole.
+
+#### The Storm Project
+
+[Zomboid Storm](https://github.com/pzstorm/storm) is the new and *sexy* way of modding Project Zomboid.
+
+It is a fully integrated Java modding toolchain that allows mod developers to easily create functional Java mods using a custom API. It is similar to [Fabric](https://fabricmc.net/) and [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) which both provide modding capabilities for Minecraft. The project is open source and licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. It is currently in alpha stage of development and releases are publicly available on [Github](https://github.com/pzstorm/storm/releases). Everyone is encourage to join the testing process by downloading and using the latest pre-release. More information about Storm, including installation instructions and testing procedures can be found in the project [`README`](https://github.com/pzstorm/storm/blob/master/README.md). 
+
