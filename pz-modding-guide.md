@@ -170,20 +170,20 @@ Official modding support is implemented with modified [Kahlua](https://code.goog
 
 - Easy to learn and write mods with.
 - Has officially supported API.
-- Supported by the modding community. 
+- Supported by the modding community.
 
 #### Disadvantages
 
 - Unable to access classes and members that are not directly exposed by API.
-- No type safety or on-the-fly compiler errors makes it more difficult to write code. 
+- No type safety or on-the-fly compiler errors makes it more difficult to write code.
 - More difficult to debug due to lack of proper debugging tools.
 - No control over memory management.
 
 #### Limitations
 
 - Does not implement all standard Lua modules such as `io.*` and `os.*`.
-- Java classes that have not been directly exposed by `LuaManager.Exposed` are not accessible from Lua.
-- Java class fields are not accessible from Lua regardless of whether the owner class is directly exposed or not. 
+- Java classes that have not been directly exposed by `LuaManager.Exposer` are not accessible from Lua.
+- Java class fields are not accessible from Lua regardless of whether the owner class is directly exposed or not.
 - Numbers cannot be stored as any type other then `double` in `KahluaTable` which degrades performance and increases memory use.
 
 
@@ -197,7 +197,7 @@ Still, there are many examples where it makes more sense to use Lua over Java, s
 
 - Nearly unlimited scope of modding.
 - Type safety and access to all IDE features.
-- Easy to inspect and debug your code during runtime. 
+- Easy to inspect and debug your code during runtime.
 - Complete control over memory management.
 
 #### Disadvantages
