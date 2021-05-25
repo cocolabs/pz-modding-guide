@@ -87,7 +87,7 @@ Learning how to use version control is a long but worthwhile process. Mod develo
 
 Every mod project should contain documentation that clearly states how to use and configure the mod. If there are special installation steps needed to make the mod work those should be documented as well. This documentation should be written in a `README` file that should reside in the project root directory.
 
-In addition to this, if the mod project contains code, the code itself should be sufficiently documented as to allow others to easily study and understand the code.  It should also allow other developers to continue developing the project without getting in contact with the original author.
+In addition to this, if the mod project contains code, the code itself should be sufficiently documented as to allow others to easily study and understand the code. It should also allow other developers to continue developing the project without getting in contact with the original author.
 
 #### Project wiki
 
@@ -116,7 +116,7 @@ Before starting a mod project you should think about [choosing an open source li
 
 When uploading your mod to the [Steam Workshop](https://steamcommunity.com/workshop/) you grant Valve the following rights:
 
-> Right to use, reproduce, modify, create derivative works from, distribute, transmit, transcode, translate, broadcast, and otherwise  communicate, and publicly display and publicly perform, your User  Generated Content, and derivative works of your User Generated Content, for the purpose of the operation, distribution, incorporation as part of and promotion of the Steam service, Steam games or other Steam offerings, including Subscriptions. This license is granted to Valve as the content is uploaded on Steam for the entire duration of the intellectual property rights.
+> Right to use, reproduce, modify, create derivative works from, distribute, transmit, transcode, translate, broadcast, and otherwise communicate, and publicly display and publicly perform, your User Generated Content, and derivative works of your User Generated Content, for the purpose of the operation, distribution, incorporation as part of and promotion of the Steam service, Steam games or other Steam offerings, including Subscriptions. This license is granted to Valve as the content is uploaded on Steam for the entire duration of the intellectual property rights.
 
 The excerpt above was taken from the [Steam Subscriber Agreement](https://store.steampowered.com/subscriber_agreement/#6). Many believe that by uploading to the Steam Workshop you grant Valve complete ownership and intellectual property rights to your work. After reading the linked subscriber agreement you can see that this is simply not true. You are irrevocably granting valve certain rights for the duration of the intellectual property rights, but you still retain full intellectual property rights and Valve is not able to take those rights away from you. They are however able to exercise the rights you gave them for the full duration of the agreement.
 
@@ -144,7 +144,7 @@ Developers that write code will benefit from following features in their IDE:
 - Code analysis helps spot bugs and avoid lengthy debugging sessions.
 - Code navigation helps quickly find what we are looking for saving us time and energy.
 
-Since the development environment includes many interconnecting systems which need to be configured in the right order, it is difficult to setup manually. This is why [The Storm Project](https://github.com/pzstorm/) has created [Capsid](https://github.com/pzstorm/capsid). It is a [Gradle](https://gradle.org/) plugin that enables powerful IDE features and improves your modding workflow. It helps automate the  process of setting up, assembling and deploying your project. Read the project [`README`](https://github.com/pzstorm/capsid/blob/master/README.md) for information on how to install, configure and use Capsid.
+Since the development environment includes many interconnecting systems which need to be configured in the right order, it is difficult to setup manually. This is why [The Storm Project](https://github.com/pzstorm/) has created [Capsid](https://github.com/pzstorm/capsid). It is a [Gradle](https://gradle.org/) plugin that enables powerful IDE features and improves your modding workflow. It helps automate the process of setting up, assembling and deploying your project. Read the project [`README`](https://github.com/pzstorm/capsid/blob/master/README.md) for information on how to install, configure and use Capsid.
 
 ## Writing code
 
@@ -233,7 +233,7 @@ It is a fully integrated Java modding toolchain that allows mod developers to ea
 ## License
 
 ```
-Copyright (C)  2021  Matthew Cain.
+Copyright (C) 2021 Matthew Cain.
 Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3
 or any later version published by the Free Software Foundation;
