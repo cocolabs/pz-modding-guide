@@ -29,23 +29,25 @@ In addition to the requirements listed above the following knowledge is recommen
 
 ## Methodology
 
-Before we explain the different modding aspects, it is important to understand the proper methodology used to create and publish mods. The methodology proposed here should be adhered to regardless of what aspects of modding you are engaged in. As explained in the [Motivation](#motivation) section, our primary motivation should be to have fun by create interesting content. In order to consistently create mods and keep motivated we have to adhere to sane workflows.
+Before we explain the different modding aspects, it is important to understand the proper principles and procedures with which we create and publish mods. In order to consistently create mods and keep motivated we have to adhere to sane workflows. To help others do the same we have to carefully document our project and keep it free (as in "free speech") and share it with others. Keep in mind that the methodology proposed here should be adhered to regardless of the scope or aspect of your project. The same rules apply whether you want to change a sprite texture or do a complete game overhaul.
 
 ### Reasoning
 
-The proposed methodology consists of advanced tools and workflows. Learning to apply this methodology to your modding process takes time and dedication. Here are some of the common reasons mod developers give for not using advanced tools and workflows:
+The proposed methodology consists of advanced tools and workflows. Learning to apply this methodology to your modding process takes time and dedication. The justification for this investment in time is increased efficiency and more enjoyable experience. Increased efficiency leads to overall higher mod quality and more free time which can then be used to either create more mods or invest in other things in life. More enjoyable experience means we are less frustrated and more motivation to create even more amazing mods. It also helps create a more healthy community.
 
-- They are not getting paid for creating mods, it is only a hobby.
-- They do not need all the features provided by advanced tools and workflows.
-- They do not have the time to install and learn how to use advanced tools and workflows.
+Here are some of the common reasons mod developers give for not using advanced tools and workflows:
+
+- I am not getting paid for creating mods, it is only a hobby.
+- I do not need all the features provided by advanced tools.
+- I do not have the time to install and learn how to use these things.
 
 On the surface these reasons might feel perfectly reasonable, but let's take a closer look at each argument.
 
-The first argument claims that **there is no need to put care and effort into something that is only a hobby**. Take for example any major open source project that is widely used by countless users on a daily basis, like Linux projects. Linux is free software and as such does not make any money from sales. Most contributors to Linux projects do not get paid and are not looking to get paid. Their main motivation is not money. If the Linux community did not want to put effort into supporting the projects because *it's only a hobby and they are not getting paid for it*, Linux would not be what it is today.
+The first argument claims that **there is no need to put care and effort into something that is only a hobby**. Take for example any major open source project that is widely used by countless users on a daily basis, like Linux distributions. Linux is free software and as such does not make any money from sales. Most contributors to Linux do not get paid and are not looking to get paid. Their main motivation is not money. If the Linux community did not want to put effort into supporting the projects because *it's only a hobby and they are not getting paid for it*, Linux would not be what it is today.
 
-The second argument claims that **since not all features of the tool are needed, using the tool makes little sense**. If we think about all the advanced tools we use in out day to day life we can easily think of numerous examples of tools that offer a lot more features then what we are currently using. Take for example your mobile phone. This is an advanced tool that you are only partially utilizing because you don't need to use the countless features this devices has to offer, yet you are still using it. It is clear that it offers benefits that other more simplistic contraptions (such as rocks and shoestring cups) cannot match.
+The second argument claims that **since not all features of the tool are needed, using the tool makes little sense**. If we think about all the advanced tools we use in our day to day life we can easily think of numerous examples of tools that offer a lot more features then what we are currently using. Take for example your mobile phone. This is an advanced tool that you are only partially utilizing because you don't need to use the countless features it has to offer, yet you are still using it. It is clear that it offers benefits that other more simplistic contraptions (such as rocks and shoestring cups) cannot match.
 
-The third argument claims that **the time needed to install and learn how to use advanced tools does not justify it's benefit**. This argument comes from not knowing the actual benefit of said tools and workflows. If you thought that the benefit of driving a car over traveling around the world on a horse is negligible you would never buy a car and live the rest of your life as a true cowboy. The main benefits of using the methodology proposed in this guide is increased efficiency which leads to overall higher mod quality and more enjoyable workflow which brings more motivation used to create amazing mods.
+The third argument claims that **the time needed to install and learn how to use advanced tools does not justify it's benefit**. This argument comes from not knowing the actual benefit of said tools. If you thought that the benefit of driving a car over riding a horse is negligible, you would never buy a car and live the rest of your life as a true cowboy. The argument also does not take into account the positive impact that using these tools and workflows in your mod development process has on the whole community.
 
 ### Design
 
@@ -53,7 +55,7 @@ The third argument claims that **the time needed to install and learn how to use
 
 ### Version control
 
-In this section we are going to explain what version control systems (VCS) are, how to use them, and why they are an integral part in any modding process. Always remember that game modding is just downscaled game development and is thus not excluded from software development practices.
+In this section we are going to explain what version control systems (VCS) are, how to use them, and why they are an integral part in any mod development process. Always remember that game modding is just downscaled game development and is thus not excluded from software development practices.
 
 #### What is VCS?
 
@@ -61,29 +63,29 @@ Here is a good summary of what version control is:
 
 > Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members. It is important to state that version control is not just used to version code. It should be used on any project file that can be versioned, which includes text files, model files, image files etc.
 
-Read more about version control in this [article](https://www.atlassian.com/git/tutorials/what-is-version-control), after which you should know everything you needed to get started with version control.
+Read more about version control in this [article](https://www.atlassian.com/git/tutorials/what-is-version-control), after which you should know everything you need to get started with version control.
 
 #### Why use VCS?
 
-The main question you might be wondering is why you should use such a seemingly complex system in your modding workflow. In addition to everything already said in the article linked above the answer is simple: **it benefits the whole community**.
+The main question you might be wondering is why you should use such a seemingly complex system in your mod development workflow. In addition to everything already said in the article linked above, the answer is simple: **it benefits the whole community**.
 
-When you are using version control in your project and hosting it on a repository hosting service such as [Github](https://www.github.com) you are leaving a complete long-term change history of every file contained within your project. This means every change made by you and potentially other individuals you collaborated with over the complete lifespan of development is recorded in detail. When you eventually stop developing the project it can be easily picked up by other developers and continually developed until they pass the torch to others. Introducing version control in your modding workflow helps the community by making your development process cleaner, more readable and easier to understand and follow.
+When you are using version control in your project and hosting it on a repository hosting service such as [Github](https://www.github.com) you are leaving behind a complete long-term change history of every file contained within your project. This means every change made by you and others you collaborated with over the complete lifespan of development is recorded in detail. When you eventually stop developing the project it can be easily picked up by other developers and continually developed until they pass the torch to others. Introducing version control in your mod development workflow helps the community by making your development process cleaner, more readable and easier to understand and follow.
 
-Imagine if every mod project you ever came across used version control. How many outdated and abandoned mods have you seen and wanted to revive but had no idea where to begin? How many active mods struggle with simple bugs authors are unable or unwilling to resolve due to *spaghetti* code which makes them more and more reluctant to continue development with each line of code they write? The reason for this is that the authors did not keep a clean record of what they were doing. Most modders will say that code documentation is important but very few will admit that documenting project changes is equally important.
+Imagine if every mod project you ever came across used version control. How many outdated and abandoned mods have you seen and wanted to revive but had no idea where to begin? How many active mods struggle with simple bugs authors are unable or unwilling to resolve due to *spaghetti* code which makes them more and more reluctant to continue development with each line of code they write? The reason for this is that the authors did not keep a clean record of what they were doing. Most developers will say that documenting code is important but very few will admit that documenting project changes is equally important.
 
 #### How to use VCS?
 
-The most widely used modern version control system in the world today is [Git](https://www.atlassian.com/git/tutorials/what-is-git). When using Git every developer's working copy of the code is also a repository that can contain the full history of all changes. This ensures that your project, along with a detail record of of changes, is always safe as long as a single copy of your project repository is present somewhere, which should always be the case as long as you are using a repository hosting service. The recommended repository hosting service is [Github](https://www.github.com) due to it's great support for open source projects, intuitive web-interface and easy project management.
+The most widely used modern version control system in the world today is [Git](https://www.atlassian.com/git/tutorials/what-is-git). When using Git every developer's working copy of the code is also a repository that can contain the full history of all changes. This ensures that your project, along with a detail record of changes is always safe as long as a single copy of your project repository is present somewhere, which should always be the case as long as you are using a repository hosting service. The recommended repository hosting service is [Github](https://www.github.com) due to it's great support for open source projects, intuitive web-interface and easy project management.
 
-- Start by [installing](https://www.atlassian.com/git/tutorials/install-git) Git. It is easy to install and as with most software the installation process depends on your operating system.
-- In addition to installing Git it is also recommended to install [Github Desktop](https://desktop.github.com/) (see [here](https://github.com/shiftkey/desktop) for Linux version). It is a Git desktop client which makes using Git much easier by providing a clean user interface that keeps simple Git tasks simple and provides much needed quality of life.
+- Start by [installing](https://www.atlassian.com/git/tutorials/install-git) Git. It is easy to install and works on most operating systems.
+- In addition to installing Git it is also recommended to install [Github Desktop](https://desktop.github.com/) (see [here](https://github.com/shiftkey/desktop) for Linux version). It is a Git desktop client which makes using Git much easier. It provides a clean user interface that keeps simple Git tasks simple and provides much needed quality of life.
 - Once you have Git installed read [git - the simple guide](https://rogerdudler.github.io/git-guide/) to learn the basics of using Git.
-- Download or bookmark these cheat sheets to help you out when you forget Git commands:
+- Download or bookmark these cheat sheets to help you out when you eventually forget Git commands:
   - [Atlassian Git Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet).
   - [Simple Git Cheat Sheet by Roger Dudler](https://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf).
   - [Git command references by yooksi](https://gist.github.com/yooksi/913a23562063ed1925d8064cb9ba35b3).
 
-Learning how to use version control is a long but worthwhile process. Mod developers have to start using version control in their mod development workflows to help improve the quality of mods and provide better community support for new modders.
+Learning how to use version control is a long but worthwhile process. Mod developers need to be encouraged to start using version control in their mod development workflows to help improve the quality of mods and provide better community support for new modders.
 
 ### Documentation
 
@@ -93,34 +95,34 @@ In addition to this, if the mod project contains code, the code itself should be
 
 #### Project wiki
 
-Larger projects are encouraged to open and maintain a wiki page where they can document different project aspects in detail. For example; a mod that expands foraging should have a wiki page that lists all the different plants that can be foraged, a mod that adds more cooking recipe should list those recipes along with recipe schematics that inform the players how to use them, a mod that overhauls zombies behavior should split each behavior category in different pages and provide a detailed explanation of how exactly do different aspects of behavior differ from vanilla behavior.
+Larger projects are encouraged to open and maintain a wiki where they can document different project aspects in detail. For example; a mod that expands foraging should have a wiki page that lists all the different plants that can be foraged, a mod that adds more cooking recipe should list those recipes along with recipe schematics that inform the players how to use them, a mod that overhauls zombie behavior should split each behavior category in different pages and provide a detailed explanation of how exactly different aspects of behavior differ from vanilla behavior.
 
 The recommended way of creating and hosting wikis is with [Github wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis). It allows you to write pages in Markdown and HTLM format. It also allows others to contribute either directly or via pull requests, since each wiki is a Git repository with it's own detailed history of changes.
 
 ### Licensing
 
-The final and most important aspect of modding methodology is licensing. Developing mods is a fun activity that most of us do for fun, however this reason should not preclude ethical considerations. Mods should always be developed and distributed under ethical principles.
+The final and most important aspect of modding methodology is licensing. Developing mods is a fun activity that most of us do for free, however this reason should not preclude ethical considerations. Mods should always be developed and distributed under ethical principles.
 
-As mentioned in the previous section, the main reason for learning and practicing version control is to help the modding community. In turn the modding community helps you. Nobody knows everything and the value of collective knowledge always outweighs that of individual knowledge.
+As mentioned in the previous section, the main reason why mod developers should learn and practice version control is to help the community. In turn the community helps them. Nobody knows everything and the value of collective knowledge always outweighs that of individual knowledge.
 
-For this same reason mod developers should keep their mods open source (since version control does not benefit the community if it is kept secret) and allow users essential freedoms when using their mods. Keeping your project open source means that the source code and asset project files are open for anyone to use, study and modify. This principle allows other people to contribute to the development and improvement of mods like a community.
+For this same reason mod developers should keep their mods open source, since version control does not benefit the community if it is kept secret. They should also guarantee users essential freedoms when using their mods. Keeping your project open source means that the source code and asset project files are open for anyone to use, study and modify. This principle allows others to contribute to the development and improvement of mods like a community.
 
-As stated by [GNU](https://www.gnu.org/philosophy/free-sw.html) free and open source software should give users the following essential freedoms:
+As stated by [GNU](https://www.gnu.org/philosophy/free-sw.html), free and open source software should give users the following essential freedoms:
 
 > - The freedom to run the program as you wish, for any purpose.
 > - The freedom to study how the program works, and change it so it does your computing as you wish.
 > - The freedom to redistribute copies so you can help others.
 > - The freedom to distribute copies of your modified versions to others.
 
-Many mod developers are hesitant to make their projects open source as they are afraid that by doing so they are allowing others to steal their work and claim it as their own. This stems from a fundamental misunderstanding of what *free software* is. When declaring your project open source you are not telling the world that you forgo all legal rights and that anyone can do what they want with your work. You are telling the world that they **have the freedom to run, copy, distribute, study, change and improve** your work, nothing more. Most open source licenses protect your work under threat of legal punishment against actions such as someone taking your work and publishing it under his name.
+Many mod developers are hesitant to make their projects open source as they are afraid that by doing so they are allowing others to steal their work and claim it as their own. This stems from a fundamental misunderstanding of what *free software* is. When declaring your project open source you are not telling the world that you forgo all legal rights and that anyone can do what they want with your work. You are telling the world that they **have the freedom to run, copy, distribute, study, change and improve** your work, nothing more. Most open source licenses protect your work under threat of legal punishment against actions such as someone taking your work and publishing it under their name.
 
-Before starting a mod project you should think about [choosing an open source license](https://choosealicense.com/) that works best for you. The best choice for small and simple projects is the [MIT License](https://choosealicense.com/licenses/mit/) which lets people do almost anything they want with your project, like making and distributing closed source versions. However, if you are working on a more serious project I would recommend the [GNU GPL v3](https://choosealicense.com/licenses/gpl-3.0/) license which also lets people do almost anything they want with your project, *except* distributing closed source versions. Not allowing people to distribute closed source versions helps enforce the principles of free software.
+Before starting a mod project you should think about [choosing an open source license](https://choosealicense.com/) that works best for you. The best choice for small and simple projects is the [MIT License](https://choosealicense.com/licenses/mit/) which lets people do almost anything they want with your project, like making and distributing closed source versions. However, if you are working on a more serious project it is recommended to use the [GNU GPL v3](https://choosealicense.com/licenses/gpl-3.0/) license which also lets people do almost anything they want with your project, *except* distributing closed source versions. Not allowing people to distribute closed source versions helps enforce the principles of free software.
 
 When uploading your mod to the [Steam Workshop](https://steamcommunity.com/workshop/) you grant Valve the following rights:
 
 > Right to use, reproduce, modify, create derivative works from, distribute, transmit, transcode, translate, broadcast, and otherwise communicate, and publicly display and publicly perform, your User Generated Content, and derivative works of your User Generated Content, for the purpose of the operation, distribution, incorporation as part of and promotion of the Steam service, Steam games or other Steam offerings, including Subscriptions. This license is granted to Valve as the content is uploaded on Steam for the entire duration of the intellectual property rights.
 
-The excerpt above was taken from the [Steam Subscriber Agreement](https://store.steampowered.com/subscriber_agreement/#6). Many believe that by uploading to the Steam Workshop you grant Valve complete ownership and intellectual property rights to your work. After reading the linked subscriber agreement you can see that this is simply not true. You are irrevocably granting valve certain rights for the duration of the intellectual property rights, but you still retain full intellectual property rights and Valve is not able to take those rights away from you. They are however able to exercise the rights you gave them for the full duration of the agreement.
+The excerpt above was taken from the [Steam Subscriber Agreement](https://store.steampowered.com/subscriber_agreement/#6). Many believe that by uploading to the Steam Workshop you grant Valve complete ownership and intellectual property rights to your work. After reading the linked subscriber agreement you can see that this is simply not true. You are irrevocably granting Valve certain rights for the duration of the intellectual property rights, but you still retain full intellectual property rights and Valve is not able to take those rights away from you. They are however able to exercise the rights you gave them for the full duration of the agreement.
 
 ## Tools
 
