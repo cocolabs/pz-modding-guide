@@ -14,3 +14,14 @@ Readers should note that the methodology proposed in this guide is not presented
 
 The process of game modding is a fun and rewarding activity where players get to modify the game to create interesting and engaging content for themselves and others to enjoy. It can also be exhausting, time consuming and mind numbing experience with most time being spent on preforming tedious tasks, searching for documentation and solving unexpected problems. Not using the right tools, looking at the right places, or learning the right things all lead to frustration and an eventual burnout. The primary purpose of this guide is to make your modding experience more fun and less tedious.
 
+## Requirements
+
+- Patience and dedication to learn how to create and publish modifications the right way.
+- Willingness to adopt open source software development workflows and principles.
+- Basic knowledge of creating content which the readers wants to modify the game with. For example, if the reader wanted to learn how to implement a new or modify an existing 3D model in the game, the guide would assume the reader is capable of creating or modifying the model on his own and would instead focus on explaining the procedure of preparing the model and importing it in the game.
+
+In addition to the requirements listed above the following knowledge is recommended but not required:
+
+- Previous knowledge of Project Zomboid or game modding in general. Having previous knowledge of game modding will make the guide much easier to follow, however the guide will explain modding methodology by assuming the reader has no previous experience modding Project Zomboid or any other game. Note that some aspects of the guide are intended for modders with intermediate and advanced modding experience and will be marked as such.
+- Basic knowledge of software development principles and practices. This is recommended because the reasoning behind much of the methodology proposed will be easier to understand for those with some experience in developing software. However, the guide will explain the development principles and practice by assuming the reader has no previous knowledge of said principles and practices.
+
