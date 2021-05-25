@@ -230,9 +230,11 @@ It is a fully integrated Java **modding toolchain** that allows mod developers t
 
 ## Community
 
-- Visit the [PZ Modding](https://theindiestone.com/forums/index.php?/forum/45-pz-modding/) section of the Project Zomboid forum to discuss and learn about modding.
-- Join the official Project Zomboid [Discord server](https://discord.gg/EjSqDd9x) and visit the `#modding` channel to discuss modding.
-- Join the unofficial Project Zomboid [Discord server](https://discord.gg/vCeydWCbd9) to meet the author of this guide and discuss and learn about modding.
+The following is a list of communities where you can discuss and learn about modding:
+
+- Visit the [PZ Modding](https://theindiestone.com/forums/index.php?/forum/45-pz-modding/) section of the Project Zomboid forum.
+- Join the official Project Zomboid [Discord server](https://discord.gg/EjSqDd9x) and visit the `#modding` channel.
+- Join [Coco Labs](https://discord.gg/vCeydWCbd9) Discord server to meet the author of this guide and join community projects.
 
 ## Credits
 
