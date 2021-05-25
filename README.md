@@ -281,7 +281,7 @@ The following is a list of communities where you can discuss and learn about mod
 
 ## Credits
 
-- [The Indie Stone](https://projectzomboid.com/blog/about-us/) for creating and continually working on Project Zomboid making it the best zombie survival game.
+- [The Indie Stone](https://projectzomboid.com/blog/about-us/) for creating Project Zomboid and making it the best zombie survival game.
 - [FWolfe](https://github.com/FWolfe) for writing [Project Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide) and inspiring me to write this guide.
 - Project Zomboid modding community for helping me learn more about the game.
 
