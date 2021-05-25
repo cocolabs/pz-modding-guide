@@ -18,9 +18,9 @@ The primary purpose of this guide is to present an alternative way of modding th
 
 ## Requirements
 
-- Patience and dedication to learn how to create and publish modifications the right way.
-- Willingness to adopt open source software development workflows and principles.
-- Basic knowledge of creating content which the readers wants to modify the game with. For example, if the reader wanted to learn how to implement a new or modify an existing 3D model in the game, the guide would assume the reader is capable of creating or modifying the model on his own and would instead focus on explaining the procedure of preparing the model and importing it in the game.
+- Willingness to adopt open source development workflows and principles.
+- Patience and dedication to learn how to use advanced tools and workflows.
+- Basic knowledge of creating content with which the readers wants to modify the game with. For example, if the reader wanted to learn how to implement a new or modify an existing 3D model in the game, the guide would assume the reader is capable of creating or modifying the model on his own and would instead focus on explaining the procedure of preparing the model and importing it in the game.
 
 In addition to the requirements listed above the following knowledge is recommended but not required:
 
