@@ -10,3 +10,7 @@ Readers are encouraged to remember that all information in this guide is present
 
 Readers should note that the methodology proposed in this guide is not presented as the *only way*, but rather the *best way* of modding Project Zomboid. Readers should also be aware that the methodology proposed in this guide is currently **not accepted** as the recommended way of modding Project Zomboid. This makes it more difficult to find documentation and support from community channels when using said methodology.
 
+## Motivation
+
+The process of game modding is a fun and rewarding activity where players get to modify the game to create interesting and engaging content for themselves and others to enjoy. It can also be exhausting, time consuming and mind numbing experience with most time being spent on preforming tedious tasks, searching for documentation and solving unexpected problems. Not using the right tools, looking at the right places, or learning the right things all lead to frustration and an eventual burnout. The primary purpose of this guide is to make your modding experience more fun and less tedious.
+
