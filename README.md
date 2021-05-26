@@ -115,7 +115,14 @@ The third argument claims that **the time needed to install and learn how to use
 
 ### Design
 
+Mods should be designed with usability foremost in mind, provided they will be publicly available (as is encouraged in [Open source](#open-source) section). Many mod developers design their mods to fit their own needs without thinking much about how accessible and configurable their mod is. In most cases this is simply an oversight, but sometimes it's part of development philosophy which is a result of the *"I am not getting paid to create mods, it is only a hobby"* mentality.
 
+Each mod should have the following design qualities:
+
+- **Inclusive** - Mod names should not include names or usernames of one or more authors unless it is thematically compatible. For example, calling your clothing mod "John's Cool Clothes" is not acceptable, while calling your underwater diner mod "BlueCrab's sea diner" is acceptable since including the author fits with the theme of the mod. Including your name or username in the name of the mod communicates to everyone that this is and always will be your mod. Establishing a claim in this way prevents the idea of **collective ownership** and makes the community more atomized. Instead of focusing on their own ego, developers should try to focus on the mod idea itself, and welcome community participation.  
+- **Configurable** - If possible, mods should offer a way to configure various settings so users can tailor their experience, as opposed to being forced to experience the game precisely how the author envisioned it. Configuration options should be accessible and easy to change. A list of configuration options along with configuration instructions should be present somewhere in project documentation.
+- **Modular** - Expansive mods that contain a lot of different elements should consider separating optional elements into modules or add-ons. These are separate mods that users can install at their discretion. Mod developers should be careful as not to create too much add-ons for any single mod as that makes it much more difficult to curate and maintain mod lists. As with configuration options, the goal here is to allow the user to tailor his experience.
+- **Independent** - Mods that depend on external components should try to integrate as much of those components as possible. Depending on other libraries and mods means that users have to download those libraries and mods, which makes mod management more difficult. Having a lot of mods with dependencies means uninstalling mods becomes a chore as users don't know which dependencies they need to keep and which can be safely removed. 
 
 ### Version control
 
