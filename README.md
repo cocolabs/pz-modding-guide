@@ -117,7 +117,7 @@ In conclusion, it should now be clear what this guide implies when labeling some
 
 ### Design
 
-Mods should be designed with usability foremost in mind, provided they will be publicly available (as is encouraged in [Open source](#open-source) section). Many mod developers design their mods to fit their own needs without thinking much about how accessible and configurable their mod is. In most cases this is simply an oversight, but sometimes it's part of development philosophy which is a result of the *"I am not getting paid to create mods, it is only a hobby"* mentality.
+Mods should be designed with usability foremost in mind, provided they will be publicly available (as is encouraged in [Freedom](#freedom) section). Many mod developers design their mods to fit their own needs without thinking much about how accessible and configurable their mod is. In most cases this is simply an oversight, but sometimes it's part of development philosophy which is a result of the *"I am not getting paid to create mods, it is only a hobby"* mentality.
 
 Each mod should have the following design qualities:
 
